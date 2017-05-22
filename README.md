@@ -14,9 +14,11 @@ In the example you will see that image dimension is 128x128x3 rather than 32x32x
 
 Run "matconversion" first and you will get 6 batched mat files in the folder named "batched_mat_folder" then you have to replace all 6 mat files in ./data/cifar/cifar-10-batches-mat" (If you previously run original "cifar.m" then these allready ben created, otherwise you have to create this folder too)  folder with newly created mat files in "batched_mat_folder" and also modify "batches.meta.mat" files according to your number of classes and their names. 
 
-If your image dimenson is differnt other than (32,32,3) then you have to change all previous image dimension (32,32,3) with your custome image size like (128,128,3) for all three "cnn_cifar,mat", "cnn_cifar_init.mat" , "cnn_cifar_init_min.mat" files in "matconvnet/examples/cifar" folder.  
+If your image dimenson is differnt other than (32,32,3) then you have to change all previous image dimension (32,32,3) with your custome image size like (128,128,3) for all three "cnn_cifar,mat", "cnn_cifar_init.mat" , "cnn_cifar_init_min.mat" files in "matconvnet/examples/cifar" folder.
 
-Initially you have to change input image size (According to your custom image size like 128,128,3) for input layer of the CNN neural network but to have desired results you may have to change filter size in each layer of the network which is left for you.
+Then you will run "cnn_cifar.m" and later you will see your custom "imdb.mat" been created.   
+
+Initially you have to change input image size (According to your custom image size for example 128,128,3) for input layer of the CNN neural network but to have desired results you may have to change filter size in each layer of the network which been left for you.
 
 For (128,128,3) image size it will take signicant amount of time for eigen-decomposition and normalization, so it is recommended that first you will try for lower dimension like (40,40,3)
 
