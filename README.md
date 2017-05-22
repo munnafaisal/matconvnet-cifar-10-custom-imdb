@@ -1,7 +1,8 @@
 # matconvnet-cifar-10-custom-imdb
 It creates custom imdb for matconvnet cifar-10
+
 It creates 5 training "data_batch_1.mat.... data_batch_5.mat" and also "test_batch.mat" same as original cifar-10 dataset
-It does not creat "batches.meta.mat" which is left for you
+,it does not creat "batches.meta.mat" which is left for you
 
 The example contains a parent folder named "Folder" which has two subfolders "folder_1" and  "folder_2" these two folder contains two different class of images.
 
