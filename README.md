@@ -1,5 +1,6 @@
 # matconvnet-cifar-10-custom-imdb
 It creates custom imdb for matconvnet cifar-10
+Tested for MATLAB 2014a, 2016a, (32,32,3) and (38,38,3) image size.
 
 It creates 5 training "data_batch_1.mat.... data_batch_5.mat" and also "test_batch.mat" same as original cifar-10 dataset
 ,it does not creat "batches.meta.mat" which is left for you
@@ -20,7 +21,9 @@ Then you will run "cnn_cifar.m" and later you will see your custom "imdb.mat" be
 
 Initially you have to change input image size (According to your custom image size for example 128,128,3) for input layer of the CNN neural network but to have desired results you may have to change filter size in each layer of the network which been left for you.
 
-For (128,128,3) image size it will take signicant amount of time for eigen-decomposition and normalization, so it is recommended that first you will try for lower dimension like (40,40,3)
+For the first time "cnn_cifar" may not run for (128,128,3) size, it might show error in "error" calculation in very 1st batch, however solution is not provided here..... 
+
+For (128,128,3) image size it will take signicant amount of time for eigen-decomposition and normalization, so it is recommended that first you will try for lower dimension like (32,32,3) or (38,38,3)
 
 Sorry for my poor English
 
